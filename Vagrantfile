@@ -20,7 +20,7 @@ def configure_centos(config)
     # You can also host your own Vagrant box repository
     # config.vm.box_url = http:// or file://
     # Configure port forwarding  to the virtual machine.
-    config.vm.network 'forwarded_port', guest: 8080, host: 8080, protocol: 'tcp'
+    config.vm.network 'forwarded_port', guest: 8081, host: 8081, protocol: 'tcp'
     # Folders can be mount to the VM (req's Sudo so unavailable)
     # config.vm.synced_folder "./ansible", "/ansible"
 end
@@ -48,8 +48,7 @@ echo "Hello World!"
 #    python get-pip.py
 #fi
 #if [ ! -f "miniconda.sh" ]; then
-#    curl "https://repo.anaconda.com/miniconda/\
-#    Miniconda3-latest-Linux-x86_64.sh" -o "miniconda.sh"
+#    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o miniconda.sh
 #    chmod a+x ./miniconda.sh && ./miniconda.sh -b -p /home/vagrant/miniconda3
 #    source /home/vagrant/miniconda3/bin/activate
 #    conda env create -f /vagrant/environment.yml

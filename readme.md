@@ -6,7 +6,7 @@ be really useful for:
 1. Keeping a consistent development environment that can be shared quickly
 between users. Solve the "It works on my machine problem".
 2. Automated installation of VM's. Vagrant takes care of the entire
-installation and setup of your VM through Virtualbox.
+installation and setup of your VM through installed hypervisor.
 3. Great Development tool for any infrastructure as code project running via
 VirtualMachines, EC2 or Azure VM's.
 
@@ -14,6 +14,9 @@ VirtualMachines, EC2 or Azure VM's.
 
 **Fedora**  
 Packages are available via stock Fedora repositories.  
+* libvirt qemu-kvm  should be installed by default in Fedora, you can also use 
+Virtualbox linked below. In order to use Virtualbox you would need to ensure
+the box that gets downloaded is the Virtualbox version.
 * VirtualBox [official site](https://www.virtualbox.org/)  
 * Vagrant [official site](https://www.vagrantup.com/docs/installation/)
 
